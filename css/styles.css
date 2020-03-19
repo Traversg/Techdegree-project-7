@@ -1,0 +1,197 @@
+body {
+    margin: 0;
+    background: whitesmoke;
+    font-family: 'Oswald';
+} 
+
+/* Header */
+
+header {
+    background: skyblue;
+    color: white;
+    font-family: 'Oswald';
+    display: flex;
+    flex-basis: 0;
+    /* justify-content: space-between; */
+    align-items: center;
+    padding: 5px 5px 5px 10px;
+    max-height: 50px;
+}
+
+header h1 {
+    margin-right: auto;
+    font-size: 1.3em;
+}
+
+header h3 {
+    margin-left: 10px;
+    font-size: .9em;
+} 
+
+header svg {
+    display: block;
+    width: 100%;
+} 
+
+header img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.bell {
+    border-right: solid black 1px;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+/* Navigation */
+
+ nav {
+    background: orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    padding: 5px 10px;
+}
+
+nav img {
+    height: 25px;
+    width: 25px;
+    margin: 15px;
+} 
+
+/* Dashboard */
+
+.main-header {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.headline {
+    margin-right: auto;
+    font-size: 1em;
+}
+
+.main-header-search {
+   background: grey;
+   padding: 10px;
+   border-bottom-left-radius: 5px;;
+
+}
+
+/* Alert */
+
+.alert {
+    background: purple;
+    border-radius: 3px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: white;
+}
+
+/* Traffic */
+
+.traffic-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.traffic-header h3 {
+ font-size: 1em;
+ margin-top: 5px;
+}
+
+.traffic-nav {
+    list-style-type: none;
+    display: flex;
+}
+
+.traffic-nav li {
+    padding-right: 10px;
+    font-size: .8em;
+}
+
+/* Daily Traffic */
+
+.daily h3 {
+    font-size: 1em;
+    margin-top: 5px;
+    padding-left: 10px;
+}
+
+/* Mobile Users */
+
+.mobile h3 {
+    font-size: 1em;
+    margin-top: 5px;
+    padding-left: 10px;
+}
+
+/* Socials */
+
+.social-section h3 {
+    font-size: 1em;
+    margin-top: 5px;
+    padding-left: 10px;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.social-container {
+    display: flex;
+    align-items: center;
+    border: solid grey 1px;
+    background: lightgray;
+    padding-right: 20px;
+    padding-left: 20px
+}
+
+.social-text {
+    font-size: .5em;
+    margin: 0
+}
+
+  .social-image {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: purple;
+    display: flex;
+    justify-content: center;
+} 
+
+.social-image svg {
+    width: 45%;
+}
+
+/* New Members */
+
+.members h3 {
+    font-size: 1em;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+.members-container {
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.profile-image {
+    border-radius: 50%;
+    width: 50px;
+}
+
+
