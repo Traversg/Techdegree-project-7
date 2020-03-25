@@ -302,8 +302,10 @@ nav img {
     padding-left: 10px;
 }
 
-label {
+.switch-ios {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .widget-container {
