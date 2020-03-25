@@ -162,19 +162,21 @@ nav img {
 
 .social {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
 }
 
 .social-container {
     display: flex;
+    justify-content: center;
     align-items: center;
     border: solid #d1d1d1 1px;
     background: #fbfbfb;
     padding-right: 20px;
     padding-left: 20px;
-    width: 33%;
-    margin: 0 10px;
+    width: 85%;
+    margin: 10px 0px;
     border-radius: 3px;
 }
 
@@ -200,13 +202,18 @@ nav img {
 
 
 .social-image {
-    width: 25px;
-    height: 25px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     background: #7377bf;
-    display: flex;
-    justify-content: center;
+    transform-origin: center;
 } 
+
+.social-image svg {
+    height: 30px;
+    width: 30px;
+    padding: 10px;
+}
 
 /* New Members */
 
@@ -218,19 +225,35 @@ nav img {
 
 .members-container {
     display: flex;
-    padding-left: 10px;
-    padding-right: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
     border-bottom: solid 1px #dfdfdf;
     align-items: center;
+    font-size: 12px;
 }
 
 .members-text {
     display: flex;
     flex-direction: column;
+    margin-right: 200px;
+    margin-bottom: 7px;
+    width: 30%;
+}
+
+.members-text a {
+    text-decoration: none;
+    color: #7377bf;
+}
+
+.members-text p:first-child {
+    margin-bottom: 0px;
 }
 
 .profile-image {
     border-radius: 50%;
+    width: 50px;
+    margin-right: 10px;
 }
 
 /* Recent Activity */
@@ -243,10 +266,27 @@ nav img {
 
 .activity-container {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     padding-left: 10px;
     padding-right: 10px;
     border-bottom: solid 1px #dfdfdf;
     align-items: center;
+    font-size: 12px;
+}
+
+.activity-text {
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+    width: 70%;
+}
+
+.activity-text p:first-child {
+    margin-bottom: 0px;
+}
+.activity-text p:nth-child(2){
+    margin-top: 0px;
 }
 
 /* Message User */
@@ -255,10 +295,15 @@ nav img {
     border-top: solid #d1d1d1  .5px;
     border-bottom: solid #d1d1d1  .5px;
 }
+
 .message h3 {
     font-size: 1em;
     margin-top: 10px;
     padding-left: 10px;
+}
+
+label {
+    display: flex;
 }
 
 .widget-container {
