@@ -42,7 +42,6 @@ header img {
 
 .bell {
     border-right: solid black 1px;
-    padding-right: 10px;
     width: 20px;
     height: 20px;
     padding: 5px;
@@ -196,7 +195,7 @@ nav img {
 
 .mobile {
     padding-top: 10px;
-    padding-bottom: 25px;
+    padding-bottom: 10px;
     border-top: solid 1px #dfdfdf;
 }
 
@@ -510,3 +509,24 @@ label {
         width: 45vw;
     }
 }
+
+/* Media Queries  */
+
+@media (min-width: 768px) {
+    .mobile {
+        border-left: solid 1px #dfdfdf;
+    }
+
+    .social {
+        flex-direction: row;
+    }
+
+    .social-container {
+        margin-right: 20px;
+    }
+
+    .recent {
+        border-top: solid 1px #dfdfdf;
+    }
+}
+
