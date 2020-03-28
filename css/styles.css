@@ -275,6 +275,12 @@ nav img {
 
 /* New Members */
 
+.activity-container,
+.members-container {
+    height: 90px;
+    box-sizing: border-box;
+}
+
 .members {
     border-top: solid 1px #dfdfdf;
 }
@@ -352,11 +358,6 @@ nav img {
 }
 
 /* Message User */
-
-.message {
-    border-top: solid #d1d1d1  .5px;
-    border-bottom: solid #d1d1d1  .5px;
-}
 
 .message h3 {
     font-size: 1em;
@@ -513,6 +514,13 @@ label {
 /* Media Queries  */
 
 @media (min-width: 768px) {
+
+    nav {
+        height: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
     .mobile {
         border-left: solid 1px #dfdfdf;
     }
@@ -525,8 +533,22 @@ label {
         margin-right: 20px;
     }
 
+    .social-container:first-child {
+        margin-left: 20px;
+    }
+
     .recent {
         border-top: solid 1px #dfdfdf;
+        border-left: solid 1px #dfdfdf;
     }
+
+    .settings {
+        border-left: solid 1px #dfdfdf;
+    }
+
+    .toggle-flex {
+        display: flex;
+    }
+
 }
 
