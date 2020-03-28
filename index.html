@@ -26,7 +26,9 @@
                </g>
            </g>
            </svg>
-           <div id="notifications"></div>
+           <div id="notifications">
+               <span class="dot"></span>
+           </div>
         </div>
         <img src="web_app_dashboard_v3.1/images/profile.jpg">
         <h3>Travers Geoffray</h3>
@@ -60,9 +62,8 @@
         </div>
 
         <!-- Alert Banner -->
-        <div class="alert" id="alert">
+        <div id="alert">
             <!-- JS will insert alert here -->
-            <p>PLACEHOLDER TEXT</p>
         </div>
 
         <!--Line Graph Charts-->
@@ -98,7 +99,7 @@
     
                 <div class="widget-container-half">
                     <!-- element bar graph will attach to -->
-                    <canvas id="daily-chart"></canvas>
+                    <canvas id="mobile-chart"></canvas>
                 </div>
             </section>
 
@@ -267,6 +268,7 @@
         <section class="settings">
             <h3>Settings</h3>
 
+            <div class="toggle">
             <label class="switch-ios switch-light" onclick="">
                 <input type="checkbox">
               
@@ -280,7 +282,7 @@
                   <a></a>
                 </span>
               </label>
-
+            
               <label class="switch-ios switch-light" onclick="">
                 <input type="checkbox">
 
@@ -294,6 +296,7 @@
                   <a></a>
                 </span>
               </label>
+            </div>
 
             <div class="bottom-settings">
             <select class="form-field" id="timzone">
@@ -310,10 +313,7 @@
             </div>
         </section>
      </main>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI=" crossorigin="anonymous"></script>
+     <script src="js/app.js"></script>
 </body>
-
-<footer>
-
-</footer>
-
 </html>
