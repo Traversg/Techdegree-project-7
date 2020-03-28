@@ -144,7 +144,7 @@ var mobileChart = new Chart(mobile, {
             position: 'right',
             labels: {
                 fontFamily: 'Oswald',
-            }
+            },
         },
 
         rotation: 0.1 * Math.PI
@@ -155,6 +155,7 @@ var mobileChart = new Chart(mobile, {
 // Alert Banner
 
 const alertBanner = document.getElementById('alert');
+const notifications = document.getElementById('notifications');
 
 alertBanner.innerHTML = 
     `<div class="alert-banner">
@@ -164,8 +165,9 @@ alertBanner.innerHTML =
 
 alertBanner.addEventListener('click', e => {
     const element = e.target;
-    if (element.classList.contains("alert-banner-close")) {
-        alert.style.display = 'none'
+    if (element.classList.value.includes("alert-banner-close")) {
+        alertBanner.style.display = 'none',
+        notifications.style.display = 'none'
     }
 });
 
