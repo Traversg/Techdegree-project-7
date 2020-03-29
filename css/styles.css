@@ -87,6 +87,10 @@ nav img {
     margin: 15px;
 } 
 
+nav a:hover {
+    border-bottom: solid 5px #85db81;
+}
+
 /* Dashboard */
 
 .main-header {
@@ -160,6 +164,7 @@ nav img {
     justify-content: space-between;
     align-items: center;
     padding-left: 10px;
+    margin-right: 50px;
 }
 
 .traffic-header h3 {
@@ -171,10 +176,22 @@ nav img {
     list-style-type: none;
     display: flex;
 }
-
 .traffic-nav li {
-    padding-right: 10px;
     font-size: .8em;
+    padding: 3px 10px;
+}
+
+.traffic-nav li:first-child,
+.traffic-nav li:nth-child(2),
+.traffic-nav li:nth-child(3)
+ {
+    margin-right: 10px;
+}
+
+.traffic-nav li:hover {
+    background-color: #85db81;
+    border-radius: 25px;
+    color: white;
 }
 
 /* Daily Traffic */
@@ -304,9 +321,9 @@ nav img {
 .members-text {
     display: flex;
     flex-direction: column;
-    margin-right: 100px;
+    margin-right: 65px;
     margin-bottom: 7px;
-    width: 30%;
+    width: 70%;
 }
 
 .members-text a {
@@ -519,8 +536,13 @@ label {
         height: 100%;
         flex-direction: column;
         justify-content: flex-start;
-        align-items: center;
     }
+    
+    nav a:hover {
+        border-left: solid 5px #85db81;
+        border-bottom: none;
+    }
+
     .mobile {
         border-left: solid 1px #dfdfdf;
     }
