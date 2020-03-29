@@ -268,36 +268,20 @@
         <section class="settings" id="settings">
             <h3>Settings</h3>
 
-            <div class="toggle">
-            <label class="switch-ios switch-light" onclick="">
-                <input type="checkbox">
-              <div class="toggle-flex">
-                <strong>
-                  Send Email Notifications
-                </strong>
-              
-                <span>
-                  <span>Off</span>
-                  <span>On</span>
-                  <a></a>
-                </span>
-            </div>
-              </label>
-            
-              <label class="switch-ios switch-light" onclick="">
-                <input type="checkbox">
+            <div class="toggle-section">
+            <label class="toggle">
+                    <input class="toggle-checkbox" type="checkbox">
+                    <div class="toggle-switch"></div>
+                    <span class="toggle-label">Send Email Notifications</span>
+            </label>
+                
+                <label class="toggle">
+                    <input class="toggle-checkbox" type="checkbox" checked>
+                    <div class="toggle-switch"></div>
+                    <span class="toggle-label">Set Profile To Public</span>
+            </label>
+        </div>
 
-                <strong>
-                  Set Profile To Public
-                </strong>
-              
-                <span>
-                  <span>Off</span>
-                  <span>On</span>
-                  <a></a>
-                </span>
-              </label>
-            </div>
 
             <div class="bottom-settings">
             <select class="form-field" id="timzone">
