@@ -436,28 +436,6 @@ nav a:hover {
 
 /* Settings */
 
-label {
-    margin-bottom: 25px;
-    text-align: center;
-}
-
-.toggle {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-}
-
-.switch-ios {
-	width: auto;
-}
-.switch-ios strong {
-    margin: 50px;
-}
-
-.switch-ios span {
-	margin: auto;
-}
 
 
 .settings h3 {
@@ -477,7 +455,7 @@ label {
     border: solid 1px #d1d1d1;
     border-radius: 3px;
     padding: 10px 15px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     align-items: center;
 }
 
@@ -528,6 +506,75 @@ label {
     }
 }
 
+/* Toggle */
+
+*, *:before, *:after {
+    box-sizing: border-box;
+  }
+
+  label {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+   .toggle {
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Oswald';
+  }
+
+  .toggle-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }
+
+  .toggle-switch {
+    display: inline-block;
+    background: #ccc;
+    border-radius: 16px;
+    width: 58px;
+    height: 32px;
+    position: relative;
+    vertical-align: middle;
+    transition: background 0.25s;
+  }
+  .toggle-switch:before, .toggle-switch:after {
+    content: "";
+  }
+  .toggle-switch:before {
+    display: block;
+    background: linear-gradient(to bottom, #fff 0%, #eee 100%);
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.25);
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    transition: left 0.25s;
+  }
+  .toggle:hover .toggle-switch:before {
+    background: linear-gradient(to bottom, #fff 0%, #fff 100%);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5);
+  }
+  .toggle-checkbox:checked + .toggle-switch {
+    background: #7377bf;
+  }
+  .toggle-checkbox:checked + .toggle-switch:before {
+    left: 30px;
+  }
+  .toggle-checkbox {
+    position: absolute;
+    visibility: hidden;
+  }
+  .toggle-label {
+    margin-left: 5px;
+    position: relative;
+    top: 2px;
+  }
+  
+
 /* Media Queries  */
 
 @media (min-width: 768px) {
@@ -566,10 +613,6 @@ label {
 
     .settings {
         border-left: solid 1px #dfdfdf;
-    }
-
-    .toggle-flex {
-        display: flex;
     }
 
 }
